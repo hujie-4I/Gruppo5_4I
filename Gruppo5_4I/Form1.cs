@@ -15,6 +15,10 @@ namespace Gruppo5_4I
         public Form1()
         {
             InitializeComponent();
+            int a = 0;
+
+
+
         }
     }
 }
