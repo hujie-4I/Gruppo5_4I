@@ -10,13 +10,12 @@ using System.Windows.Forms;
 
 namespace Gruppo5_4I
 {
-    public partial class Form1 : Form
+    public partial class MainCalc : Form
     {
-        public Form1()
+        public MainCalc()
         {
             InitializeComponent();
-            int a = 0;
-            int b = 0;
+          
 
 
 
