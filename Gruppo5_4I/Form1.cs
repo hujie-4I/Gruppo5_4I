@@ -16,6 +16,7 @@ namespace Gruppo5_4I
         {
             InitializeComponent();
             int a = 0;
+            int b = 0;
 
 
 
