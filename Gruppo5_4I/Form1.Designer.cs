@@ -62,9 +62,14 @@
             this.CalcTextBox.ReadOnly = true;
             this.CalcTextBox.Size = new System.Drawing.Size(388, 65);
             this.CalcTextBox.TabIndex = 0;
+            this.CalcTextBox.TabStop = false;
+            this.CalcTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CalcTextBox.TextChanged += new System.EventHandler(this.CalcTextBox_TextChanged);
+            this.CalcTextBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CalcTextBox_MouseDown);
             // 
             // PercBtn
             // 
+            this.PercBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PercBtn.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.PercBtn.Location = new System.Drawing.Point(43, 216);
             this.PercBtn.Name = "PercBtn";
@@ -72,9 +77,11 @@
             this.PercBtn.TabIndex = 1;
             this.PercBtn.Text = "%";
             this.PercBtn.UseVisualStyleBackColor = true;
+            this.PercBtn.Click += new System.EventHandler(this.PercBtn_Click);
             // 
             // CEBtn
             // 
+            this.CEBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CEBtn.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.CEBtn.Location = new System.Drawing.Point(128, 216);
             this.CEBtn.Name = "CEBtn";
@@ -82,9 +89,11 @@
             this.CEBtn.TabIndex = 2;
             this.CEBtn.Text = "CE";
             this.CEBtn.UseVisualStyleBackColor = true;
+            this.CEBtn.Click += new System.EventHandler(this.CEBtn_Click);
             // 
             // CBtn
             // 
+            this.CBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CBtn.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.CBtn.Location = new System.Drawing.Point(215, 216);
             this.CBtn.Name = "CBtn";
@@ -92,9 +101,11 @@
             this.CBtn.TabIndex = 3;
             this.CBtn.Text = "C";
             this.CBtn.UseVisualStyleBackColor = true;
+            this.CBtn.Click += new System.EventHandler(this.CBtn_Click);
             // 
             // DelBtn
             // 
+            this.DelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DelBtn.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.DelBtn.Location = new System.Drawing.Point(215, 293);
             this.DelBtn.Name = "DelBtn";
@@ -102,19 +113,23 @@
             this.DelBtn.TabIndex = 4;
             this.DelBtn.Text = "DEL";
             this.DelBtn.UseVisualStyleBackColor = true;
+            this.DelBtn.Click += new System.EventHandler(this.DelBtn_Click);
             // 
             // PotenzaBtn
             // 
+            this.PotenzaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PotenzaBtn.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.PotenzaBtn.Location = new System.Drawing.Point(128, 292);
             this.PotenzaBtn.Name = "PotenzaBtn";
             this.PotenzaBtn.Size = new System.Drawing.Size(80, 70);
             this.PotenzaBtn.TabIndex = 5;
-            this.PotenzaBtn.Text = "^n";
+            this.PotenzaBtn.Text = "^";
             this.PotenzaBtn.UseVisualStyleBackColor = true;
+            this.PotenzaBtn.Click += new System.EventHandler(this.PotenzaBtn_Click);
             // 
             // sette
             // 
+            this.sette.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sette.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.sette.Location = new System.Drawing.Point(43, 365);
             this.sette.Name = "sette";
@@ -122,9 +137,11 @@
             this.sette.TabIndex = 9;
             this.sette.Text = "7";
             this.sette.UseVisualStyleBackColor = true;
+            this.sette.Click += new System.EventHandler(this.tre_Click);
             // 
             // otto
             // 
+            this.otto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otto.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.otto.Location = new System.Drawing.Point(128, 365);
             this.otto.Name = "otto";
@@ -132,9 +149,11 @@
             this.otto.TabIndex = 10;
             this.otto.Text = "8";
             this.otto.UseVisualStyleBackColor = true;
+            this.otto.Click += new System.EventHandler(this.tre_Click);
             // 
             // nove
             // 
+            this.nove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nove.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.nove.Location = new System.Drawing.Point(215, 365);
             this.nove.Name = "nove";
@@ -142,9 +161,11 @@
             this.nove.TabIndex = 11;
             this.nove.Text = "9";
             this.nove.UseVisualStyleBackColor = true;
+            this.nove.Click += new System.EventHandler(this.tre_Click);
             // 
             // RadiceBtn
             // 
+            this.RadiceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RadiceBtn.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.RadiceBtn.Location = new System.Drawing.Point(42, 291);
             this.RadiceBtn.Name = "RadiceBtn";
@@ -152,9 +173,11 @@
             this.RadiceBtn.TabIndex = 12;
             this.RadiceBtn.Text = "√";
             this.RadiceBtn.UseVisualStyleBackColor = true;
+            this.RadiceBtn.Click += new System.EventHandler(this.RadiceBtn_Click);
             // 
             // quattro
             // 
+            this.quattro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.quattro.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.quattro.Location = new System.Drawing.Point(43, 441);
             this.quattro.Name = "quattro";
@@ -162,9 +185,11 @@
             this.quattro.TabIndex = 13;
             this.quattro.Text = "4";
             this.quattro.UseVisualStyleBackColor = true;
+            this.quattro.Click += new System.EventHandler(this.tre_Click);
             // 
             // cinque
             // 
+            this.cinque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cinque.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cinque.Location = new System.Drawing.Point(128, 441);
             this.cinque.Name = "cinque";
@@ -172,9 +197,11 @@
             this.cinque.TabIndex = 14;
             this.cinque.Text = "5";
             this.cinque.UseVisualStyleBackColor = true;
+            this.cinque.Click += new System.EventHandler(this.tre_Click);
             // 
             // sei
             // 
+            this.sei.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sei.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.sei.Location = new System.Drawing.Point(215, 441);
             this.sei.Name = "sei";
@@ -182,9 +209,11 @@
             this.sei.TabIndex = 15;
             this.sei.Text = "6";
             this.sei.UseVisualStyleBackColor = true;
+            this.sei.Click += new System.EventHandler(this.tre_Click);
             // 
             // negativo
             // 
+            this.negativo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.negativo.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.negativo.Location = new System.Drawing.Point(43, 594);
             this.negativo.Name = "negativo";
@@ -192,9 +221,11 @@
             this.negativo.TabIndex = 16;
             this.negativo.Text = "+/-";
             this.negativo.UseVisualStyleBackColor = true;
+            this.negativo.Click += new System.EventHandler(this.negativo_Click);
             // 
             // zero
             // 
+            this.zero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.zero.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.zero.Location = new System.Drawing.Point(128, 594);
             this.zero.Name = "zero";
@@ -202,9 +233,11 @@
             this.zero.TabIndex = 20;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = true;
+            this.zero.Click += new System.EventHandler(this.tre_Click);
             // 
             // tre
             // 
+            this.tre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tre.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tre.Location = new System.Drawing.Point(215, 517);
             this.tre.Name = "tre";
@@ -212,9 +245,11 @@
             this.tre.TabIndex = 19;
             this.tre.Text = "3";
             this.tre.UseVisualStyleBackColor = true;
+            this.tre.Click += new System.EventHandler(this.tre_Click);
             // 
             // due
             // 
+            this.due.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.due.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.due.Location = new System.Drawing.Point(128, 517);
             this.due.Name = "due";
@@ -222,9 +257,11 @@
             this.due.TabIndex = 18;
             this.due.Text = "2";
             this.due.UseVisualStyleBackColor = true;
+            this.due.Click += new System.EventHandler(this.tre_Click);
             // 
             // uno
             // 
+            this.uno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uno.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uno.Location = new System.Drawing.Point(43, 517);
             this.uno.Name = "uno";
@@ -232,9 +269,11 @@
             this.uno.TabIndex = 17;
             this.uno.Text = "1";
             this.uno.UseVisualStyleBackColor = true;
+            this.uno.Click += new System.EventHandler(this.tre_Click);
             // 
             // UgualeBtn
             // 
+            this.UgualeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UgualeBtn.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.UgualeBtn.Location = new System.Drawing.Point(301, 517);
             this.UgualeBtn.Name = "UgualeBtn";
@@ -242,9 +281,11 @@
             this.UgualeBtn.TabIndex = 21;
             this.UgualeBtn.Text = "=";
             this.UgualeBtn.UseVisualStyleBackColor = true;
+            this.UgualeBtn.Click += new System.EventHandler(this.UgualeBtn_Click);
             // 
             // Decimale
             // 
+            this.Decimale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Decimale.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Decimale.Location = new System.Drawing.Point(215, 594);
             this.Decimale.Name = "Decimale";
@@ -252,9 +293,11 @@
             this.Decimale.TabIndex = 22;
             this.Decimale.Text = ".";
             this.Decimale.UseVisualStyleBackColor = true;
+            this.Decimale.Click += new System.EventHandler(this.Decimale_Click_1);
             // 
             // AddizioneBtn
             // 
+            this.AddizioneBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddizioneBtn.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.AddizioneBtn.Location = new System.Drawing.Point(300, 441);
             this.AddizioneBtn.Name = "AddizioneBtn";
@@ -262,9 +305,11 @@
             this.AddizioneBtn.TabIndex = 30;
             this.AddizioneBtn.Text = "+";
             this.AddizioneBtn.UseVisualStyleBackColor = true;
+            this.AddizioneBtn.Click += new System.EventHandler(this.MenoBtn_Click);
             // 
             // DivBtn
             // 
+            this.DivBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DivBtn.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.DivBtn.Location = new System.Drawing.Point(301, 216);
             this.DivBtn.Name = "DivBtn";
@@ -272,9 +317,11 @@
             this.DivBtn.TabIndex = 29;
             this.DivBtn.Text = "÷";
             this.DivBtn.UseVisualStyleBackColor = true;
+            this.DivBtn.Click += new System.EventHandler(this.DivBtn_Click);
             // 
             // MenoBtn
             // 
+            this.MenoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MenoBtn.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MenoBtn.Location = new System.Drawing.Point(300, 365);
             this.MenoBtn.Name = "MenoBtn";
@@ -282,9 +329,11 @@
             this.MenoBtn.TabIndex = 34;
             this.MenoBtn.Text = "-";
             this.MenoBtn.UseVisualStyleBackColor = true;
+            this.MenoBtn.Click += new System.EventHandler(this.MenoBtn_Click);
             // 
             // MoltiplicazioneBtn
             // 
+            this.MoltiplicazioneBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MoltiplicazioneBtn.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MoltiplicazioneBtn.Location = new System.Drawing.Point(300, 292);
             this.MoltiplicazioneBtn.Name = "MoltiplicazioneBtn";
@@ -292,6 +341,7 @@
             this.MoltiplicazioneBtn.TabIndex = 33;
             this.MoltiplicazioneBtn.Text = "x";
             this.MoltiplicazioneBtn.UseVisualStyleBackColor = true;
+            this.MoltiplicazioneBtn.Click += new System.EventHandler(this.MenoBtn_Click);
             // 
             // MainCalc
             // 
@@ -324,6 +374,8 @@
             this.Controls.Add(this.CalcTextBox);
             this.Name = "MainCalc";
             this.Text = "Calcolatrice";
+            this.Load += new System.EventHandler(this.MainCalc_Load);
+            this.SizeChanged += new System.EventHandler(this.MainCalc_SizeChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
